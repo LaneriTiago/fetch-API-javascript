@@ -28,6 +28,22 @@ form.addEventListener ('submit', function (evt) {
         })
 })
 
+/*const url2 = `https://api.vagalume.com.br/search.php?apikey=660a4395f992ff67786584e238f501aa&art=Lady%20Gaga&mus=Alejandro&extra=relmus`
+
+const teste = document.querySelector ('#teste')
+
+    fetch(url2)
+    .then(response => response.json ())
+    .then(data => {
+        teste.innerHTML = data.mus[0].text
+       console.log(data.mus[0].text) 
+    })*/ // API vagalume
+
+    const CPFsemFormatar = 'O CPF é 40843562803'
+
+    const CPFFormatado = CPFsemFormatar.replace ('40843562803', '408.435.628-03')
+
+    console.log (CPFFormatado)
 
 
 
